@@ -1,0 +1,61 @@
+\documentclass[a4paper, 11pt]{article}
+ 
+
+\input{Ag-Setup-fancy.tex}
+
+
+\begin{document}
+
+\title{Komplexe Zahlen}
+\author{M. Anderegg}
+\date{} % sonst wird das Datum im Titel angezeigt
+\maketitle 
+
+Während Ihrer Schulzeit haben Sie bereits mehrfach erlebt, wie der Zahlenbereich schrittweise erweitert wurde:
+\begin{itemize}
+	\item In der Grundschule haben Sie zunächst die natürlichen Zahlen $\N$ kennengelernt, die für das Zählen und einfache Rechenoperationen genutzt werden.
+	$$\N=\left\{\hspace{5cm}\right\}$$
+    Die Zahlen in dieser Menge kann man unbesorgt addieren und multiplizieren. Beim Subtrahieren kann es aber vorkommen, dass das Resultat ausserhalb den Menge $\N$ liegt. %Zum Beispiel, wenn man $5-7$ rechnet.
+  \item Darum wurde dieser Zahlenbereich zu den ganzen Zahlen $\Z$ erweitert, sodass Subtraktionen uneingeschränkt möglich wurden.
+		$$\Z=\left\{\hspace{5cm}\right\}$$
+    Allerdings kann es sein, dass man bei der Division von zwei ganzen Zahlen ein Resultat erhält, das nicht zur Menge $\Z$ gehört. 
+	\item Die nächste Erweiterung führte von den ganzen Zahlen $\Z$ zu den rationalen Zahlen $\Q$, womit Divisionen (ausser durch $0$) durchgeführt werden können.
+		$$\Q=\left\{\hspace{5cm}\right\}$$
+
+  \item Schliesslich ermöglichte der Übergang von $\Q$ zu den reellen Zahlen $\R$, auch Lösungen für bestimmte Potenzgleichungen wie $x^2=2$ zu finden oder Konstanten wie $\pi$ zur Beschreibung der Fläche des Einheitskreises anzugeben.
+		\end{itemize}
+
+Insgesamt wurde der Zahlenbereich also bereits dreimal erweitert.
+
+
+$$\textcolor{ForestGreen}{\N}\subset\textcolor{Brown}{\Z}\subset\textcolor{BrickRed}{\Q}\subset\textcolor{RoyalBlue}{\R}$$
+
+
+\begin{center}
+    \includegraphics[width = 0.5 \textwidth]{media/zahlenmengen2.png}
+\end{center}
+
+
+Bei all diesen Erweiterungen wurden stets drei wesentliche Punkte eingehalten (\textit{Permanenzprinzip}):
+
+\begin{enumerate}
+\item Die alten Zahlenmengen sind stets in den neuen Zahlenmengen enthalten.
+\item Alle Rechenoperationen, die mit den alten Zahlen möglich waren, bleiben auch in den neuen Zahlen möglich.
+\item Die Rechenregeln der alten Zahlen gelten unverändert auch für die neuen Zahlen.
+\end{enumerate}
+
+Da es in $\R$ einfache Gleichungen gibt, wie etwa $x^2 = -1$, die sich zwar formulieren, aber nicht lösen lassen, liegt es nahe, $\R$ zu erweitern. Wie diese Erweiterung unter Einhaltung des Permanenzprinzips durchgeführt werden kann, werden wir im weiteren Verlauf dieser Skripts untersuchen. Das Ergebnis dieser Erweiterung wird die Menge $\C$ der komplexen Zahlen sein, in der insbesondere die Potenzgleichung $x^2 = -1$ eine Lösung besitzt – nämlich die sogenannte imaginäre Einheit $i$.
+
+\clearpage
+\input{normalform.tex}
+\clearpage
+\input{zahlenebene.tex}
+\clearpage
+\input{gleichungen.tex}
+\clearpage
+\input{KomplexeFolgen.tex}
+%\input{todo.tex}
+
+
+	
+\end{document}
